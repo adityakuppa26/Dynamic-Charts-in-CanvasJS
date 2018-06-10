@@ -27,7 +27,27 @@ var dps = [];
  }]
 });
 	
-	
+	var chart1 = new CanvasJS.Chart("chartContainer1", {
+ title :{
+	 text: "Reliable Sequenced Data",
+  horizontalAlign: "left",
+  padding:6,
+  fontFamily: "arial",
+ },
+ axisY: {
+  title:"no. of messages",
+  includeZero: false
+	  },
+		
+	axisX: {
+  title:"time",
+  includeZero: false
+ },       
+ data: [{
+  type: "line",
+  dataPoints: dps
+ }]
+});	
 <body> 
 <div id="container"> 
 	<h1 align="center"><b><font size="6">Network Monitoring Statistics</font></b></h1> 
