@@ -48,6 +48,21 @@ var dps = [];
   dataPoints: dps
  }]
 });	
+	var chart2 = new CanvasJS.Chart("chartContainer2", {
+ title :{
+  text: "Unreliable Sequenced Data",
+  horizontalAlign: "left",
+  padding:6,
+  fontFamily: "arial",
+ },
+ axisY: {
+  title:"no. of messages",
+  includeZero: false
+ },  
+ axisX: {
+  title:"time",
+  includeZero: false
+ },     
 <body> 
 <div id="container"> 
 	<h1 align="center"><b><font size="6">Network Monitoring Statistics</font></b></h1> 
